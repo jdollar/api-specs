@@ -63,6 +63,8 @@ $ curl --location --request DELETE \
       ```json
       {
       "deletion_id": 25,
+      "success": false,
+      "complete": false,
       "message": "Deletion request was received and will be processed"
       }
       ```
@@ -74,6 +76,8 @@ $ curl --location --request DELETE \
       <?xml version="1.0" encoding="UTF-8"?>
       <Success>
          <deletion_id>25</deletion_id>
+         <success>false</success>
+         <complete>false</complete>
          <message>Deletion request was received and will be processed</message>
       </Success>
       ```
