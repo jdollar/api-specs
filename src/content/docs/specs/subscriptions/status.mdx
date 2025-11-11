@@ -16,9 +16,9 @@ GET /v1/deletions/{id}
 This endpoint enables clients to query the status of a [deletion](/specs/subscriptions/delete). When a client sends a `DELETE` request, the server MUST respond with a `deletion_id` that can be used with this endpoint to check whether a deletion has been successfully actioned.
 
 | Parameter     | Type    | Required? | Description                                                                                         |                       |
-| ------------- | ------- | --------- | --------------------------------------------------------------------------------------------------- | --------- | --------- |
+| ------------- | ------- | --------- | --------------------------------------------------------------------------------------------------- | --------------------- |
 | `deletion_id` | Integer | Yes       | The ID of the deletion object                                                                       |                       |
-| `status`      | String  | Yes       | A status message indicating the status of the deletion. Available values: `SUCCESS`                 | `FAILURE` | `PENDING` |
+| `status`      | String  | Yes       | A status message indicating the status of the deletion. Available values: `SUCCESS`                 | `FAILURE`,`PENDING`   |
 | `message`     | String  | No        | A status message indicating the current status of the deletion, or any errors that were encountered |                       |
 
 ## Parameters
